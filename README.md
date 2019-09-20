@@ -27,3 +27,21 @@ source("R/03_run_regressions.R")
 
 They compile relevant data and produce tables of regression results for
 four model specifications.
+
+The results from these regressions are summarised in the charts below.
+
+**Model 1: Recreation of McKell models**
+
+![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+**Model 2: McKell model with pre-SG award**
+
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+**Model 3: McKell model with lagged SG one-quarter change**
+
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
+**Model 4: The previous model with RBA specifications**
+
+![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->

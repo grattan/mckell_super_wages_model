@@ -53,7 +53,8 @@ model1 <- export_summs(mck_awote_model, mck_aena_wages_model, mck_aena_social_mo
              stars = c('***' = 0.01, '**' = 0.05, '*' = 0.10),
              error_pos = "right",
              model.names = c("AWOTE",
-                             "AENA\n(wages)"),
+                             "AENA\n(wages)",
+                             "AENA\n(social)"),
              coefs =  c("sg_d4",
                         "nairu_gap_lag4",
                         "unemp_d4_lag4",
@@ -61,6 +62,8 @@ model1 <- export_summs(mck_awote_model, mck_aena_wages_model, mck_aena_social_mo
                         "nf_gdp_d8_lag4"))
 
 model1
+
+
 
 # Model 2: McKell model with pre-SG award --------------------------------------
 
@@ -115,6 +118,7 @@ model2 <- export_summs(mck_awote_model_with_award2,
 
 model2
 
+
 # Model 3: McKell model with lagged SG one-quarter change ----------------------
 
 # AWOTE
@@ -168,11 +172,7 @@ model3
 
 
 
-
-# Model 4: The previous model with RBA specifications --------------------------
-
-# Note that the original RBA model is used to predict WPI, not AWOTE or AENA
-# The RBA model is detailed here: https://www.rba.gov.au/publications/bulletin/2017/mar/pdf/bu-0317-2-insights-into-low-wage-growth-in-australia.pdf
+# Model 4: The previous model with independent variable lag --------------------------
 
 
 # AWOTE
@@ -223,3 +223,7 @@ model4 <- export_summs(rba_awote_model,
                              "AENA (social)"))
 
 model4
+
+
+
+
