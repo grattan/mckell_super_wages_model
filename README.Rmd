@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 
 # Recreating McKell Institute's super-wages model
 
-This repo recreates the McKell Institute's super-wages model presented in their 2019 research paper [_'Does higher superannuation reduce workers’ wages?'_](https://mckellinstitute.org.au/app/uploads/Does-higher-superannuation-reduce-wages.pdf). 
+This repo attempts to recreate the McKell Institute's super-wages model presented in their 2019 research paper [_'Does higher superannuation reduce workers’ wages?'_](https://mckellinstitute.org.au/app/uploads/Does-higher-superannuation-reduce-wages.pdf). 
 
 It uses the statistical package R and publicly-available data. Three R scripts are used in order:
 
@@ -28,6 +28,6 @@ source("R/02_prepare_data.R")
 source("R/03_run_regressions.R")
 ```
 
-They produce tables of regression results for four model specifications.
+They compile relevant data and produce tables of regression results for four model specifications.
 
 
