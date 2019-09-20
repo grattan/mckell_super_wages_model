@@ -96,6 +96,9 @@ super_data <- super_data %>%
     sg_early_d1 = if_else(year == 1992, 4, sg_d1),
     sg_early_d4 = if_else(year == 1992, 4, sg_d4),
     
+    # We tested a range of alternative levels for the SG prior to Q3-1992;
+    # this is because super coverage under awards was substantial pre-SG
+    # Note that these are not used in the specifications that recreate McKell's work
     sg_with_award1 = if_else(year < 1992 | (year == 1992 & quarter <= 2),
                              1, sg),
     sg_with_award1_d1 = sg_with_award1 - lag(sg_with_award1, 1),
