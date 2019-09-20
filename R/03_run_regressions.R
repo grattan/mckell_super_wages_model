@@ -53,7 +53,8 @@ model1 <- export_summs(mck_awote_model, mck_aena_wages_model, mck_aena_social_mo
              stars = c('***' = 0.01, '**' = 0.05, '*' = 0.10),
              error_pos = "right",
              model.names = c("AWOTE",
-                             "AENA\n(wages)"),
+                             "AENA\n(wages)",
+                             "AENA\n(social)"),
              coefs =  c("sg_d4",
                         "nairu_gap_lag4",
                         "unemp_d4_lag4",
@@ -61,6 +62,8 @@ model1 <- export_summs(mck_awote_model, mck_aena_wages_model, mck_aena_social_mo
                         "nf_gdp_d8_lag4"))
 
 model1
+
+
 
 # Model 2: McKell model with pre-SG award --------------------------------------
 
@@ -115,6 +118,7 @@ model2 <- export_summs(mck_awote_model_with_award2,
 
 model2
 
+
 # Model 3: McKell model with lagged SG one-quarter change ----------------------
 
 # AWOTE
@@ -165,7 +169,6 @@ model3 <- export_summs(mck_awote_d1_lag2_model,
                              "AENA (social)"))
 
 model3
-
 
 
 
@@ -223,3 +226,7 @@ model4 <- export_summs(rba_awote_model,
                              "AENA (social)"))
 
 model4
+
+
+
+

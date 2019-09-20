@@ -9,6 +9,11 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+
+library(grattantheme)
+
+base_coefs <- c("NAIRU")
+
 ```
 
 
@@ -29,4 +34,60 @@ source("R/03_run_regressions.R")
 ```
 
 They compile relevant data and produce tables of regression results for four model specifications.
+
+The results from these regressions are summarised in the charts below. 
+
+**Model 1: Recreation of McKell models**
+
+```{r, echo = FALSE}
+plot_model1 <- plot_summs(mck_awote_model, mck_aena_wages_model, mck_aena_social_model,
+                          model.names = c("AWOTE",
+                                          "AENA\n(wages)",
+                                          "AENA\n(social)"),
+                          colors = c(grattan_red, grattan_orange, grattan_yellow))
+
+plot_model1
+```
+
+
+**Model 2: McKell model with pre-SG award**
+
+```{r, echo = FALSE}
+plot_model2 <- plot_summs(mck_awote_model_with_award2, 
+                          mck_aena_wages_model_with_award2, 
+                          mck_aena_social_model_with_award2,
+                          model.names = c("AWOTE",
+                                          "AENA\n(wages)",
+                                          "AENA\n(social)"),
+                          colors = c(grattan_red, grattan_orange, grattan_yellow))
+
+plot_model2
+```
+
+**Model 3: McKell model with lagged SG one-quarter change**
+
+```{r, echo = FALSE}
+plot_model3 <- plot_summs(mck_awote_d1_lag2_model, 
+                          mck_aena_wages_d1_lag2_model, 
+                          mck_aena_social_d1_lag2_model,
+                          model.names = c("AWOTE",
+                                          "AENA\n(wages)",
+                                          "AENA\n(social)"),
+                          colors = c(grattan_red, grattan_orange, grattan_yellow))
+
+plot_model3
+```
+
+**Model 4: The previous model with RBA specifications**
+
+```{r, echo = FALSE}
+plot_model4 <- plot_summs(rba_awote_model,
+                          rba_aena_wages_model, 
+                          rba_aena_social_model, 
+                          model.names = c("AWOTE",
+                                          "AENA\n(wages)",
+                                          "AENA\n(social)"),
+                          colors = c(grattan_red, grattan_orange, grattan_yellow))
+plot_model4
+```
 
