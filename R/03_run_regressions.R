@@ -172,10 +172,7 @@ model3
 
 
 
-# Model 4: The previous model with RBA specifications --------------------------
-
-# Note that the original RBA model is used to predict WPI, not AWOTE or AENA
-# The RBA model is detailed here: https://www.rba.gov.au/publications/bulletin/2017/mar/pdf/bu-0317-2-insights-into-low-wage-growth-in-australia.pdf
+# Model 4: The previous model with independent variable lag --------------------------
 
 
 # AWOTE
