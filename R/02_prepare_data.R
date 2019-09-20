@@ -51,7 +51,6 @@ super_data <- super_data %>%
       awote_prior_filled_d4 = pc(awote_prior_filled / lag(awote_prior_filled, 4)),
     
     # AENA
-    aena = (coe_social + coe_wages) / employees,
       aena_d1 = pc(aena / lag(aena, 1)),
       aena_d4 = pc(aena / lag(aena, 4)),
     aena_social = coe_social / employees,
