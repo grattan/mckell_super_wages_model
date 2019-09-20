@@ -105,7 +105,8 @@ model2 <- export_summs(mck_awote_model_with_award2,
              stars = c('***' = 0.01, '**' = 0.05, '*' = 0.10),
              error_pos = "right",
              model.names = c("AWOTE (with pre-SG rate)",
-                             "AENA (wages) (with pre-SG rate)"),
+                             "AENA (wages) (with pre-SG rate)",
+                             "AENA (social) (with pre-SG rate)"),
              coefs =  c("sg_with_award2_d4",
                         "nairu_gap_lag4",
                         "unemp_d4_lag4",
@@ -169,6 +170,10 @@ model3
 
 
 # Model 4: The previous model with RBA specifications --------------------------
+
+# Note that the original RBA model is used to predict WPI, not AWOTE or AENA
+# The RBA model is detailed here: https://www.rba.gov.au/publications/bulletin/2017/mar/pdf/bu-0317-2-insights-into-low-wage-growth-in-australia.pdf
+
 
 # AWOTE
 rba_awote <- awote_d4 ~    
