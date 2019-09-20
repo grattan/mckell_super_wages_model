@@ -5,7 +5,7 @@
 
 # Load packages
 library(tidyverse)
-library(jtools) # nice presentation tables0
+library(jtools) # nice presentation tables
 
 
 # Load data generated in 02_prepare_data.R
