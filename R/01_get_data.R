@@ -157,6 +157,8 @@ nairu <- crossing(year = unique(nairu$year),
          quarter = c(1:4)) %>%
   right_join(nairu, by = "year")
 
+nairu <- nairu %>%
+  mutate(year = as.numeric(year))
 
 # Load and tidy inflation expectations -----------------------------------------
 
